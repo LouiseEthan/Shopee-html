@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopee</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box; 
+    }
+
+    header nav {
+        display: grid;
+        grid-template-areas: 
+        "top top"
+        "bottom bottom";
+        background-image: linear-gradient(rgb(229, 82, 29), orangered);
+        margin: 0px auto;
+        height: 120px;
+        width: 100%;
+    }
+
+    nav div.top {
+        grid-area: top;
+        display: grid;
+        grid-template-areas: 
+            "left right";
+        height: 40px;
+        width: 90%;
+        margin: 0px auto;
+    }
+    
+    nav div.top a {
+        text-decoration: none;
+        color: white;
+        font-size: 13px;
+        text-transform: capitalize;
+        margin-top: 5px;
+        font-family: Arial, Helvetica, sans-serif; 
+    }
+    
+    nav div.top a:hover {
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+        text-transform: capitalize;
+        color: rgb(212, 212, 212);
+    }
+    
+    nav div.top div.left {
+        grid-area: left;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    nav div.top div.right {
+        grid-area: right;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    nav div.bottom {
+        grid-area: bottom;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 90%;
+        height: 80px;
+        margin: 0px auto;
+    }
+
+    div.search form input.search-entry {
+        width: 800px;
+        height: 40px;
+        text-align: left;
+        margin-left: 30px;
+    }
+
+    section {
+        width: 1200px;
+        height: 300px;
+        margin: 0px auto;
+        margin-top: 30px;
+    }
+
+    section div.left {
+        float: left;
+        margin: 0px auto;
+        margin-right: 10px;
+    }
+
+    section div.right {
+        float: right;
+        margin: 0px auto;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="top">
+                 <div class="left">
+                 <a href="#">seller center</a>
+                 <a href="#">download</a>
+                 <a href="#">ikuti kami di 😎😊🤩</a>
+                 </div>
+                <div class="right">
+                    <a href="#">🔔notifikasi</a>
+                    <a href="#">bantuan</a>
+                    <a href="#">🌍bahasa indonesia</a>
+                    <a style="font-weight: bold;" href="#">log in</a>
+                    <a style="font-weight: bold;" href="#">daftar</a>
+                </div>
+            </div>
+            <div class="bottom">
+                 <div class="image">
+                     <img style="height: 60px; width: 150px; margin: 0px auto; margin-bottom: 10px;" src="https://freelogopng.com/images/all_img/1656181621shopee-logo-white.png" alt="logo shopee">
+                 </div>
+                 <div class="search">
+                     <form action="https://www.google.com/search">
+                         <input class="search-entry" type="text" name="q" id="" placeholder="Daftar & Dapatkan Voucher Gratis!">
+                     </form>
+                 </div>
+                 <div class="button">
+                     <a  style="font-size: 35px; text-decoration: none; margin-left: 50px;" href="#">🔎</a>
+                 </div>
+            </div>
+        </nav>
+     </header>
+     <section>
+         <div class="top">
+          <div class="left">
+             <img style="width: 700px; height: 255px;" src="https://cf.shopee.co.id/file/id-50009109-3fac24c8bd354af14ed17e922f26c4de_xxhdpi" alt="1"> 
+          </div>
+          <div>
+             <img style="width: 480px; height: 125px;"src="https://cf.shopee.co.id/file/id-50009109-9b911cc4495ca0eb6990cf3b04cf5154_xhdpi" alt="2">
+             <img style="width: 480px; height: 125px; margin-right: 5px;" src="https://cf.shopee.co.id/file/id-50009109-027eccb34aa1c288a1118681dd4b5e29_xhdpi" alt="3">
+          </div>
+         </div>
+     </section>
+ </body>
+</html>
